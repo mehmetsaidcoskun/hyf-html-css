@@ -85,7 +85,7 @@ a:hover {
   }
 
 a .image-links:hover {
-  opacity:0.7;
+  opacity:0.3;
 }
 
 a .image-links:focus {
@@ -111,7 +111,6 @@ a .image-links:active {
 
 .navy-images {
   position: relative;
-  color: white;
   margin:0px;
   z-index:2;
   }
