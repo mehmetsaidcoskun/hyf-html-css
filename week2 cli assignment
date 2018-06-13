@@ -1,0 +1,16 @@
+1. In vim, type “mkdir”, click ‘one space’, type “.” and then type file name in order to create a hidden file. For example “mkdir .file”
+	To display it, type “ls -a”, if you type only “ls”, you cannot see the hidden file you have just created. But if you type “ls -a”, you can see 3 hidden files and one of them is the file you have just created.
+
+2. In order to create nested folders named “these/folders/are/just/for/fun” you should type: 
+mkdir -p these/folders/are/just/for/fun
+and then press enter. Your nested folders are ready 😊
+
+3. echo "test" > fun = “test” is written in the file; there are 4 characters.
+echo "another test" >> fun = I executed this command without deleting previous file named ‘fun’. Therefore what I saw in the file named ‘fun’ is “testanother test” and there are 16 characters including space.
+wc -c fun = when I executed this command, there was not any change in the file named ‘fun’. This command is used to count bytes of the related file. When I executed this command, I saw “18 fun” on the command page.
+
+4. By default, the echo command output ends with a newline character. However, if I want, I can change this behavior using the “-n” command line option. Here is the practice:
+echo -n “test” > fun
+echo “another test” >> fun
+cat fun
+Now you will see: testanother test
