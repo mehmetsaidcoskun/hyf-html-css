@@ -1,0 +1,127 @@
+body {
+    font-family: "Courier New", Courier, Georgia, 'Times New Roman', Times, serif;
+    position:relative;
+}
+
+header{
+    color: aliceblue;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(41, 40, 40);
+    z-index: 100;
+}
+
+h2{
+    text-align:center;
+    background-color: goldenrod;
+}
+
+h3 {
+    text-align: center;
+    background-color: rgba(30, 160, 4, 0.925);
+}
+
+section{
+    margin: 2%;
+    margin-bottom: 5%;
+}
+
+ul {
+    grid-gap: 10px;
+}
+
+li {
+    min-width: 20%;
+    border: 4px rgb(36, 35, 35) inset;
+    border-radius: 15px;
+    list-style: none;
+    position: relative;
+    font-size: 1em;
+    padding: 1%;
+    /* display: block; */
+    /* vertical-align: middle; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-content: center; */
+}
+
+li:hover {
+    box-shadow: 5px 5px 2px rgb(148, 148, 148);
+}
+
+img {
+    width: 50%;
+    margin: 3%;
+    transition: all .2s ease-in-out;
+    /* display: block; */
+    /* vertical-align: middle; */
+}
+
+img:hover {
+    transform: scale(1.09);
+    background-color: white;
+}
+
+p {
+    text-align: justify;
+    /* display: block; */
+    /* vertical-align: middle; */
+}
+
+p:hover {
+    color: red;
+    font-weight: bold;
+    font-size: 105%;
+}
+
+#grid-floats .grid-item img {float:left;}
+
+#grid-floats .grid-item:nth-of-type(1) img {
+    min-width: 65%;
+}
+
+#gridflex .grid-item {
+    display:flex;
+    flex-direction: column;
+}
+
+/* for desktop size screens */
+@media only screen and (min-width:1025px) {
+    ul {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    
+    ul li:nth-of-type(1) {
+        grid-area: 1 / 1 / 2 / 3;
+        }
+
+}
+
+/* for tablet size screens */
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    ul {
+        display: grid;
+        grid-template-rows: repeat(5, 2fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    li:nth-child(-n+2) {grid-column: span 3;}
+
+    li:nth-child(n+3) {grid-column: span 2;}
+}
+
+/* for mobile phone size screens */
+@media only screen and (max-width:767px) {
+    ul {
+        display:grid;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    ul li:nth-of-type(1) {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+}
