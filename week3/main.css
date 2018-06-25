@@ -271,8 +271,7 @@ a:link, a:visited {color: #336699}
     
     #footer .languages {
         width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px;
     }
 
     #footer .languages ul {
