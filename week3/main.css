@@ -6,6 +6,7 @@ body {
     position: relative;
     text-align: center;
     width: 100%;
+    min-width: 420px;
 }
 
 a:link, a:visited {color: #336699}
