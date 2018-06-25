@@ -270,7 +270,7 @@ a:link, a:visited {color: #336699}
     }
     
     #footer .languages {
-        width: calc(100% - 40px);
+/*         width: calc(100% - 40px); */
         padding: 20px;
     }
 
