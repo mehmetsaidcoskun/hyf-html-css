@@ -8,3 +8,6 @@ https://mehmetsaidcoskun.github.io/hyf-html-css/week2/
 
 https://mehmetsaidcoskun.github.io/hyf-html-css/week3/
 <br> for the original website: https://www.rijksoverheid.nl/
+
+JavaScript2 Module - Week1
+https://mehmetsaidcoskun.github.io/hyf-html-css/JS2-week1/
